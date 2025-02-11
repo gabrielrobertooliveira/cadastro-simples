@@ -1,0 +1,24 @@
+#form-login{
+    justify-items: center;
+    text-align: start;
+}
+
+#Login{
+    margin-top: 15%;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+    position: relative;
+    width: 30%;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-logar{
+    margin-top: 10px;
+}

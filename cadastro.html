@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gabriel Roberto de Paula Oliveira">
+    <meta name="description" content="Projeto de cadastro de itens">
+    <title>Cadastro de Itens</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" >
+            <button class="btn sair">
+                Sair
+            </button>
+        </a>
+    </header>
+    <main>
+        <!--  Form para cadastro dos itens  -->
+        <section id="formulario">
+            <h1 class="titulo">Cadastro de itens</h1> 
+            <form id="cadastroItem" action="">
+                <!--  Nome do Item  -->
+                <div class="nome-item item">
+                    <label for="nomeItem">Digite o nome do item</label>
+                    <input type="text" name="nomeItem" id="nomeItem" required>
+                </div>
+    
+                <!--  Tipo do Item  -->
+                <div class="tipo-item item">
+                    <label for="tipoItem">Digite o tipo do item</label>
+                    <input type="text" name="tipoItem" id="tipoItem" required>
+                </div>
+    
+                <!--  Quantidade  -->
+                <div class="qtn-item item">
+                    <label for="qtnItem">Digite a quantidade do item</label>                    
+                    <input type="number" name="qtnItem" id="qtnItem" required>
+                </div>
+    
+                <!--  Obervações  -->
+                <div class="obs-item item">
+                    <label for="obsItem">Digite as obervações do item</label>
+                    <input type="text" name="obsItem" id="obsItem">
+                </div>
+    
+                <!--  Botão de enviar  -->
+                <input class="btn" type="submit" name="salvarItem" id="salvarItem">
+            </form>
+        </section>
+        
+        <!--  Tabela para exibir os itens  -->
+        <section id="tabela">
+            <hr>
+            <div class="topo-tabela">
+                <h2>Itens cadastrados</h2>
+                <button class="btn-limpar btn" onclick="limparTabela()"><img src="src/icon/Lixo-black.png" alt="Limpar"></a></button>
+            </div>
+            <table id="lista">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Tipo</th>
+                        <th>Quantidade</th>
+                        <th>Observações</th>
+                    </tr>
+                </thead>
+                <tbody id="listaItem">
+
+                </tbody>
+            </table>
+            
+        </section>
+
+
+    </main>
+    <script src="src/js/main.js"></script>
+</body>
+</html>
+
